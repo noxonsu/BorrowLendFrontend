@@ -57894,7 +57894,9 @@ var import_contract_helpers3 = __toESM(require_cjs());
 var networkConfigs = {
   [import_contract_helpers3.ChainId.kovan]: {
     name: "Kovan",
-    publicJsonRPCUrl: ["https://eth-kovan.alchemyapi.io/v2/demo", "https://kovan.poa.network"],
+    publicJsonRPCUrl: [
+      "https://eth-kovan.alchemyapi.io/v2/demo"
+    ],
     baseUniswapAdapter: "0xf86Be05f535EC2d217E4c6116B3fa147ee5C05A1",
     baseAssetSymbol: "ETH",
     wrappedBaseAssetSymbol: "WETH",
