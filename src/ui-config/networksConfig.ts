@@ -98,7 +98,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     baseAssetDecimals: 18,
     explorerLink: 'https://etherscan.io',
     // rpcOnly: false,
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
+    // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
     networkLogoPath: '/icons/networks/ethereum.svg',
   },
   [ChainId.polygon]: {
@@ -118,7 +118,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
       name: 'Polygon PoS Bridge',
       url: 'https://wallet.matic.network/bridge/',
     },
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
+    // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
   },
   [ChainId.mumbai]: {
     name: 'Mumbai',
@@ -173,7 +173,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
       name: 'Avalanche Bridge',
       url: 'https://bridge.avax.network/',
     },
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
+    // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
   },
   [ChainId.arbitrum_rinkeby]: {
     name: 'Arbitrum Rinkeby',
