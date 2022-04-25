@@ -54,7 +54,10 @@ export type BaseNetworkConfig = Omit<NetworkConfig, 'explorerLinkBuilder'>;
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
   [ChainId.kovan]: {
     name: 'Kovan',
-    publicJsonRPCUrl: ['https://eth-kovan.alchemyapi.io/v2/demo', 'https://kovan.poa.network'],
+    publicJsonRPCUrl: [
+      'https://eth-kovan.alchemyapi.io/v2/demo',
+      // 'https://kovan.poa.network'
+    ],
     // protocolDataUrl: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v2-kovan',
     baseUniswapAdapter: '0xf86Be05f535EC2d217E4c6116B3fa147ee5C05A1',
     baseAssetSymbol: 'ETH',
@@ -98,7 +101,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     baseAssetDecimals: 18,
     explorerLink: 'https://etherscan.io',
     // rpcOnly: false,
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
+    // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
     networkLogoPath: '/icons/networks/ethereum.svg',
   },
   [ChainId.polygon]: {
@@ -118,7 +121,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
       name: 'Polygon PoS Bridge',
       url: 'https://wallet.matic.network/bridge/',
     },
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
+    // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
   },
   [ChainId.mumbai]: {
     name: 'Mumbai',
@@ -173,7 +176,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
       name: 'Avalanche Bridge',
       url: 'https://bridge.avax.network/',
     },
-    ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
+    // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
   },
   [ChainId.arbitrum_rinkeby]: {
     name: 'Arbitrum Rinkeby',

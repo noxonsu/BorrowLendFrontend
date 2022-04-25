@@ -16,7 +16,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { useReserveRatesHistory } from 'src/hooks/useReservesHistory';
 import { ParentSize } from '@visx/responsive';
 import { ApyChart } from '../reserve-overview/ApyChart';
-import { InterestRateModelChart } from '../reserve-overview/InterestRateModelChart';
+// import { InterestRateModelChart } from '../reserve-overview/InterestRateModelChart';
 import { useProtocolDataContext } from 'src/hooks/useProtocolDataContext';
 import { ComputedReserveData } from 'src/hooks/app-data-provider/useAppDataProvider';
 import { eModeInfo } from 'src/utils/eMode';
@@ -441,7 +441,7 @@ export const ReserveConfiguration: React.FC<{ reserve: ComputedReserveData }> = 
         </PanelRow>
       )}
 
-      {reserve.borrowingEnabled && (
+      {/* {reserve.borrowingEnabled && (
         <>
           <Divider sx={{ my: '40px' }} />
 
@@ -470,7 +470,7 @@ export const ReserveConfiguration: React.FC<{ reserve: ComputedReserveData }> = 
             </ChartContainer>
           </PanelRow>
         </>
-      )}
+      )} */}
     </Paper>
   );
 };

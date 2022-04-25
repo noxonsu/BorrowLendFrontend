@@ -184,7 +184,9 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
             <Skeleton width={16} height={16} sx={{ ml: 1, background: '#383D51' }} />
           ) : (
             <Link
-              href={currentNetworkConfig.explorerLinkBuilder({ address: poolReserve?.priceOracle })}
+              href={currentNetworkConfig.explorerLinkBuilder({
+                /* address: poolReserve?.priceOracle */
+              })}
               sx={{ display: 'inline-flex', alignItems: 'center', ml: 1, color: '#A5A8B6' }}
             >
               <SvgIcon sx={{ fontSize: '16px' }}>
