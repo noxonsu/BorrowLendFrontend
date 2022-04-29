@@ -41,7 +41,7 @@ export function AppHeader() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [md]);
 
-  const headerHeight = 48;
+  const headerHeight = 52;
 
   return (
     <HideOnScroll>
@@ -73,7 +73,7 @@ export function AppHeader() {
           sx={{ lineHeight: 0, mr: 7, transition: '0.3s ease all', '&:hover': { opacity: 0.7 } }}
           onClick={() => setMobileMenuOpen(false)}
         >
-          <img src={uiConfig.appLogo} alt="An SVG of an eye" height={20} />
+          <img src={uiConfig.appLogo} alt="An SVG of an eye" height={36} />
         </Box>
 
         <Box sx={{ display: { xs: 'none', md: 'block' } }}>
