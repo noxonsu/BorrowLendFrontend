@@ -76,6 +76,10 @@ msgstr "Aave is a fully decentralized, community governed protocol by the AAVE t
 msgid "Aave per month"
 msgstr "Aave per month"
 
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Access denied"
+msgstr "Access denied"
+
 #: src/layouts/WalletWidget.tsx
 msgid "Account"
 msgstr "Account"
@@ -99,6 +103,11 @@ msgstr "Add {0} to the wallet"
 #: src/ui-config/errorMapping.tsx
 msgid "Address is not a contract"
 msgstr "Address is not a contract"
+
+#: src/modules/admin-panel/components/AdminTopPanel.tsx
+#: src/ui-config/menu-items/index.tsx
+msgid "Admin panel"
+msgstr "Admin panel"
 
 #: src/components/transactions/Emode/EmodeModalContent.tsx
 msgid "All"
@@ -137,6 +146,10 @@ msgstr "Amount must be greater than 0"
 #: src/components/transactions/Warnings/AMPLWarning.tsx
 msgid "Ampleforth FAQ"
 msgstr "Ampleforth FAQ"
+
+#: src/modules/admin-panel/components/UiSettings.tsx
+msgid "Apply"
+msgstr "Apply"
 
 #: src/components/infoModalContents/ApprovalInfoContent.tsx
 msgid "Approval"
@@ -401,6 +414,10 @@ msgstr "Collateralization"
 msgid "Connect wallet"
 msgstr "Connect wallet"
 
+#: src/modules/admin-panel/components/ContractSettings.tsx
+msgid "Contracts"
+msgstr "Contracts"
+
 #: src/components/transactions/StakeCooldown/StakeCooldownModalContent.tsx
 #: src/modules/staking/StakingPanel.tsx
 msgid "Cooldown period"
@@ -636,6 +653,10 @@ msgstr "Faucet"
 msgid "Faucet {0}"
 msgstr "Faucet {0}"
 
+#: src/modules/admin-panel/components/UiSettings.tsx
+msgid "Favicon url"
+msgstr "Favicon url"
+
 #: src/modules/governance/ProposalsList.tsx
 msgid "Filter"
 msgstr "Filter"
@@ -767,6 +788,11 @@ msgstr "Isolated"
 msgid "Isolated assets have limited borrowing power and other assets cannot be used as collateral."
 msgstr "Isolated assets have limited borrowing power and other assets cannot be used as collateral."
 
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "It can take several seconds"
+msgstr "It can take several seconds"
+
 #: src/layouts/components/LanguageSwitcher.tsx
 msgid "Language"
 msgstr "Language"
@@ -819,6 +845,18 @@ msgstr "Liquidation threshold"
 #: src/modules/dashboard/LiquidationRiskParametresModal/components/HFContent.tsx
 msgid "Liquidation value"
 msgstr "Liquidation value"
+
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Load settings"
+msgstr "Load settings"
+
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Loading settings..."
+msgstr "Loading settings..."
+
+#: src/modules/admin-panel/components/UiSettings.tsx
+msgid "Logo url"
+msgstr "Logo url"
 
 #: src/ui-config/errorMapping.tsx
 msgid "Ltv validation failed"
@@ -1034,6 +1072,14 @@ msgstr "Reached"
 msgid "Recipient address"
 msgstr "Recipient address"
 
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Register product"
+msgstr "Register product"
+
+#: src/modules/admin-panel/components/AdminTopPanel.tsx
+msgid "Registred domain"
+msgstr "Registred domain"
+
 #: src/components/WalletConnection/WalletSelector.tsx
 msgid "Rejected connection request"
 msgstr "Rejected connection request"
@@ -1116,6 +1162,18 @@ msgstr "SEE CHARTS"
 #: src/modules/dashboard/LiquidationRiskParametresModal/LiquidationRiskParametresModal.tsx
 msgid "Safety of your deposited collateral against the borrowed assets and its underlying value."
 msgstr "Safety of your deposited collateral against the borrowed assets and its underlying value."
+
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Save all changes to blockchain storage to avoid data loss"
+msgstr "Save all changes to blockchain storage to avoid data loss"
+
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Save settings"
+msgstr "Save settings"
+
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Saving settings..."
+msgstr "Saving settings..."
 
 #: src/components/transactions/Warnings/ChangeNetworkWarning.tsx
 msgid "Seems like we can't switch the network automatically. Please check if you can change it from the wallet."
@@ -1298,9 +1356,17 @@ msgstr "Switch APY type"
 msgid "Switch Network"
 msgstr "Switch Network"
 
+#: pages/admin-panel.page.tsx
+msgid "Switch network"
+msgstr "Switch network"
+
 #: src/components/transactions/RateSwitch/RateSwitchActions.tsx
 msgid "Switch rate"
 msgstr "Switch rate"
+
+#: pages/admin-panel.page.tsx
+msgid "Switch to"
+msgstr "Switch to"
 
 #: src/ui-config/menu-items/index.tsx
 msgid "Switch to Aave Classic"
@@ -1438,6 +1504,10 @@ msgstr "Time left to unstake"
 msgid "Time left until the withdrawal window closes."
 msgstr "Time left until the withdrawal window closes."
 
+#: src/modules/admin-panel/components/UiSettings.tsx
+msgid "Title"
+msgstr "Title"
+
 #: src/modules/dashboard/lists/BorrowAssetsList/BorrowAssetsList.tsx
 msgid "To borrow you need to supply any asset to be used as collateral."
 msgstr "To borrow you need to supply any asset to be used as collateral."
@@ -1494,9 +1564,17 @@ msgstr "Transaction failed"
 msgid "Transaction overview"
 msgstr "Transaction overview"
 
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "Try to change your wallet account"
+msgstr "Try to change your wallet account"
+
 #: src/components/transactions/GovDelegation/GovDelegationModalContent.tsx
 msgid "Type of delegation"
 msgstr "Type of delegation"
+
+#: src/modules/admin-panel/components/UiSettings.tsx
+msgid "UI"
+msgstr "UI"
 
 #: src/components/transactions/UnStake/UnStakeActions.tsx
 msgid "UNSTAKE {symbol}"
@@ -1656,6 +1734,10 @@ msgstr "YAE"
 #: src/components/transactions/Warnings/IsolationModeWarning.tsx
 msgid "You are entering Isolation mode"
 msgstr "You are entering Isolation mode"
+
+#: src/modules/admin-panel/components/AdminPanelWrapper.tsx
+msgid "You are not an owner"
+msgstr "You are not an owner"
 
 #: src/components/transactions/Borrow/BorrowModalContent.tsx
 msgid "You can borrow this asset with a stable rate only if you borrow more than the amount you are supplying as collateral."
