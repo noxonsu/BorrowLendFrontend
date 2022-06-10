@@ -4,7 +4,7 @@
 
 "@aave/contract-helpers@https://gitpkg.now.sh/noxonsu/aave-utilities/packages/contract-helpers?master&scripts.postinstall=%26%26%20yarn%20--ignore-scripts%20%26%26%20yarn%20build":
   version "1.1.1"
-  resolved "https://gitpkg.now.sh/noxonsu/aave-utilities/packages/contract-helpers?master&scripts.postinstall=%26%26%20yarn%20--ignore-scripts%20%26%26%20yarn%20build#0cd812f17d5a822e6cb5e46c62124126fe3482f5"
+  resolved "https://gitpkg.now.sh/noxonsu/aave-utilities/packages/contract-helpers?master&scripts.postinstall=%26%26%20yarn%20--ignore-scripts%20%26%26%20yarn%20build#6c95c22c0a67c4f1b46165d29f5894b3533f2d73"
   dependencies:
     bignumber.js "^9.0.1"
     isomorphic-unfetch "^3.1.0"
@@ -12,7 +12,7 @@
 
 "@aave/math-utils@https://gitpkg.now.sh/noxonsu/aave-utilities/packages/math-utils?master&scripts.postinstall=%26%26%20yarn%20--ignore-scripts%20%26%26%20yarn%20build":
   version "1.1.1"
-  resolved "https://gitpkg.now.sh/noxonsu/aave-utilities/packages/math-utils?master&scripts.postinstall=%26%26%20yarn%20--ignore-scripts%20%26%26%20yarn%20build#2f42971abac0852d24d007ff77e57fd319d407b6"
+  resolved "https://gitpkg.now.sh/noxonsu/aave-utilities/packages/math-utils?master&scripts.postinstall=%26%26%20yarn%20--ignore-scripts%20%26%26%20yarn%20build#6f9d86ae4ac9e89bc63d54e5044c1b22d4204161"
   dependencies:
     bignumber.js "^9.0.1"
     tslib "^2.3.1"
@@ -3966,7 +3966,7 @@ big.js@^5.2.2:
 
 bignumber.js@^9.0.0, bignumber.js@^9.0.1:
   version "9.0.2"
-  resolved "https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.2.tgz#71c6c6bed38de64e24a65ebe16cfcf23ae693673"
   integrity sha512-GAcQvbpsM0pUb0zw1EI0KhQEZ+lRwR5fYaAp3vPOYuP7aDvGy6cVN6XHLauvF8SOga2y0dcLcjt3iQDTSEliyw==
 
 binary-extensions@^2.0.0:

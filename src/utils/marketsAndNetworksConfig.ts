@@ -80,8 +80,8 @@ export function getSupportedChainIds(): number[] {
   return Array.from(
     Object.keys(marketsData).reduce((acc, value) => {
       if (
-        NEXT_PUBLIC_ENABLE_TESTNET ||
-        !networkConfigs[marketsData[value as keyof typeof CustomMarket].chainId].isTestnet
+        // NEXT_PUBLIC_ENABLE_TESTNET ||
+        /* ! */ networkConfigs[marketsData[value as keyof typeof CustomMarket].chainId].isTestnet
       )
         acc.add(marketsData[value as keyof typeof CustomMarket].chainId);
       return acc;

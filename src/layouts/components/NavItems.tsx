@@ -1,9 +1,9 @@
 import { useLingui } from '@lingui/react';
 import { Button, List, ListItem, Typography, useMediaQuery, useTheme } from '@mui/material';
 import * as React from 'react';
+import { useAdminPanel } from 'src/modules/admin-panel/hooks/AdminPanelProvider';
 
 import { Link } from '../../components/primitives/Link';
-import { useProtocolDataContext } from '../../hooks/useProtocolDataContext';
 import { navigation } from '../../ui-config/menu-items';
 import { MoreMenu } from '../MoreMenu';
 
@@ -13,9 +13,8 @@ interface NavItemsProps {
 
 export const NavItems = ({ setOpen }: NavItemsProps) => {
   const { i18n } = useLingui();
-  const { currentMarketData } = useProtocolDataContext();
-
   const { breakpoints } = useTheme();
+  const adminPanelData = useAdminPanel();
   const md = useMediaQuery(breakpoints.down('md'));
 
   return (
@@ -30,8 +29,7 @@ export const NavItems = ({ setOpen }: NavItemsProps) => {
       {navigation.map((item, index) => (
         <ListItem
           sx={{
-            display:
-              !!item.isVisible && !item.isVisible(currentMarketData) ? 'none' : 'inline-flex',
+            display: !!item.isVisible && !item.isVisible(adminPanelData) ? 'none' : 'inline-flex',
             width: { xs: '100%', md: 'unset' },
             mr: { xs: 0, md: 2 },
           }}

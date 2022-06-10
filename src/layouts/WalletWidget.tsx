@@ -283,7 +283,7 @@ export default function WalletWidget({ open, setOpen, headerHeight, md }: Wallet
           aria-expanded={open ? 'true' : undefined}
           aria-haspopup="true"
           onClick={handleClick}
-          sx={{ p: connected ? '5px 8px' : undefined }}
+          sx={{ p: connected ? '5px 8px' : undefined, flexShrink: 0 }}
           startIcon={
             connected && (
               <Box

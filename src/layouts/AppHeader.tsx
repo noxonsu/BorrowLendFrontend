@@ -2,6 +2,7 @@ import { Slide, useMediaQuery, useScrollTrigger, useTheme } from '@mui/material'
 import Box from '@mui/material/Box';
 import * as React from 'react';
 import { useEffect, useState } from 'react';
+import { useAdminPanel } from 'src/modules/admin-panel/hooks/AdminPanelProvider';
 
 import { Link } from '../components/primitives/Link';
 import { uiConfig } from '../uiConfig';
@@ -27,6 +28,7 @@ function HideOnScroll({ children }: Props) {
 export function AppHeader() {
   const { breakpoints } = useTheme();
   const md = useMediaQuery(breakpoints.down('md'));
+  const { settings } = useAdminPanel();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [walletWidgetOpen, setWalletWidgetOpen] = useState(false);
@@ -42,6 +44,8 @@ export function AppHeader() {
   }, [md]);
 
   const headerHeight = 52;
+
+  const logoUrl = settings?.logoUrl ?? uiConfig.appLogo;
 
   return (
     <HideOnScroll>
@@ -73,7 +77,11 @@ export function AppHeader() {
           sx={{ lineHeight: 0, mr: 7, transition: '0.3s ease all', '&:hover': { opacity: 0.7 } }}
           onClick={() => setMobileMenuOpen(false)}
         >
-          <img src={uiConfig.appLogo} alt="An SVG of an eye" height={36} />
+          <img
+            src={logoUrl}
+            alt="An SVG of an eye"
+            style={{ width: '100%', maxHeight: '36px', height: 'auto' }}
+          />
         </Box>
 
         <Box sx={{ display: { xs: 'none', md: 'block' } }}>
