@@ -18,9 +18,6 @@ export enum WalletType {
   GNOSIS = 'gnosis',
 }
 
-const APP_NAME = 'Aave';
-const APP_LOGO_URL = 'https://aave.com/favicon.ico';
-
 export const getWallet = (
   wallet: WalletType,
   chainId: ChainId = ChainId.mainnet
@@ -33,8 +30,7 @@ export const getWallet = (
     case WalletType.WALLET_LINK:
       const networkConfig = getNetworkConfig(chainId);
       return new WalletLinkConnector({
-        appName: APP_NAME,
-        appLogoUrl: APP_LOGO_URL,
+        appName: document.title,
         url: networkConfig.privateJsonRPCUrl || networkConfig.publicJsonRPCUrl[0],
       });
     case WalletType.WALLET_CONNECT:

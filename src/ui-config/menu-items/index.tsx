@@ -6,13 +6,12 @@ import { ROUTES } from 'src/components/primitives/Link';
 import DiscordIcon from '/public/icons/discord.svg';
 import GithubIcon from '/public/icons/github.svg';
 import AaveClassic from '/public/icons/aave_classic.svg';
-
-import { MarketDataType } from '../marketsConfig';
+import { AdminPanelData } from 'src/modules/admin-panel/hooks/AdminPanelProvider';
 
 interface Navigation {
   link: string;
   title: string;
-  isVisible?: (data: MarketDataType) => boolean | undefined;
+  isVisible?: (adminPanelData: AdminPanelData) => boolean | undefined;
   dataCy?: string;
 }
 
@@ -25,6 +24,11 @@ export const navigation: Navigation[] = [
   {
     link: ROUTES.markets,
     title: t`Markets`,
+  },
+  {
+    link: ROUTES.adminPanel,
+    title: t`Admin panel`,
+    isVisible: ({ access }) => access,
   },
   {
     link: ROUTES.staking,
