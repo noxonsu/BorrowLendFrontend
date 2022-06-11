@@ -32,7 +32,7 @@ export const AdminPanelWrapper = () => {
           <Button onClick={read}>
             <Trans>Load settings</Trans>
           </Button>
-          {error && <Alert severity="error">{error}</Alert>}
+          <Alert severity="error">{error}</Alert>
         </>
       );
     }
