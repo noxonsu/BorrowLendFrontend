@@ -45,7 +45,7 @@ export function AppHeader() {
 
   const headerHeight = 52;
 
-  const logoUrl = settings?.logoUrl ?? uiConfig.appLogo;
+  const logoUrl = settings?.logoUrl || uiConfig.appLogo;
 
   return (
     <HideOnScroll>

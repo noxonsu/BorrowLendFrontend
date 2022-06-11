@@ -11,7 +11,7 @@ type MetaProps = {
 
 export function Meta(_props: MetaProps) {
   const { settings } = useAdminPanel();
-  const title = settings?.title ?? '...';
+  const title = settings?.title;
   const faviconUrl = settings?.faviconUrl;
 
   return (
